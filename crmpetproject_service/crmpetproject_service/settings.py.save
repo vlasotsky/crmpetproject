@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#!-c#95!i*h7(412#kx_teph2dpbsh(7sofg6kca5wvscq_(@p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 
+
 
 ALLOWED_HOSTS = ['0.0.0.0']
 
@@ -40,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise'
 ]
 
 MIDDLEWARE = [
@@ -51,8 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'django.middleware.locale.LocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'crmpetproject_service.urls'
@@ -83,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'crm_db',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'USER': 'malley',
+        'PASSWORD': 'vincentVanGogh2022!!',
         'HOST': 'localhost',
         'PORT': '5432'
     }
@@ -127,13 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MEDIA_URL = 'contents/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'contents')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
