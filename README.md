@@ -1,5 +1,5 @@
 # CRM PET PROJECT
-This is the experimental project for educational purposes. 
+This is an experimental project for educational purposes. 
 ## Features inspected
 * Django Framework and it's admin panel in particular
 * Django's models into db tables
